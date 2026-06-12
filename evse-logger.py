@@ -26,11 +26,6 @@ client.loop_start()
 modbus = Solarman(EVSE_LOGGER_IP, EVSE_LOGGER_PORT, EVSE_LOGGER_TRANSPORT, EVSE_LOGGER_SERIAL_NUMBER, EVSE_LOGGER_SLAVE_ID, 10)
 
 registers = [
-    {'title': 'Device Serial Number', 'registers': [0x0002, 0x0003, 0x0004, 0x0005, 0x0006], 'icon': 'mdi:identifier'},
-    {'title': 'Device Firmware Version', 'registers': [0x0007], 'icon': 'mdi:identifier'},
-    {'title': 'Device Protocol Version', 'registers': [0x0001], 'icon': 'mdi:identifier'},
-    {'title': 'Device Public Group Number', 'registers': [0x0009], 'icon': 'mdi:identifier'},
-    {'title': 'LoRa Inverter Link', 'registers': [0x0014], 'icon': 'mdi:link-variant'},
     {'title': 'Device Specification', 'registers': [0x0013], 'mask': 0xFF00, 'values': {0x0000: "22 kW EV Charger", 0x0100: "11 kW EV Charger"}, 'icon': 'mdi:identifier'},
     {'title': 'Communication Mode', 'registers': [0x0015], 'mask': 0xFF00, 'values': {0x0000: "WiFi", 0x0100: "LoRa"}, 'icon': 'mdi:identifier'},
     {'title': 'Charging Control State', 'registers': [0x0039], 'mask': 0xFF00, 'values': {0x0000: "Standalone", 0x0100: "Authorized", 0x0200: "Limited", 0x0300: "Authorized + Limited"}, 'icon': 'mdi:identifier'},
