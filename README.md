@@ -1,4 +1,4 @@
-SUN-EVSE22K01-EU - EVSE Charger modbus HA export
+SUN-EVSE22K01-EU - EVSE Charger Modbus - Home Assistant Export
 ==
 
 This project is an extraction of the Home Assistant Solarman pull request: [feat: Add Deye EV Charger (SUN-EVSE22K01-EU) support)](https://github.com/davidrapan/ha-solarman/pull/1073/changes/235cc10910996874ebca4fd4286b0ebf29feb374#diff-9237befa134dfa14257e7cc8e13e4c88193693f1b9b42ce50045a2fe2409ec5e)
